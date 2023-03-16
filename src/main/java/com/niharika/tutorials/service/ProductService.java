@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,6 +17,8 @@ public class ProductService {
     ProductRepository productRepository;
     public List<Product> getAllProducts(){
         List<Product> products = new ArrayList<Product>();
+        List<Product> saveProducts = Arrays.asList(new Product("Niharika","Sam",true));
+        productRepository.saveAll(saveProducts);
             productRepository.findAll().forEach(products::add);
 
         return products;
