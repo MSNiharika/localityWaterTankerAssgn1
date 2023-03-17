@@ -1,4 +1,4 @@
-package com.niharika.tutorials.model;
+package com.mams.login.model;
 
 import javax.persistence.*;
 

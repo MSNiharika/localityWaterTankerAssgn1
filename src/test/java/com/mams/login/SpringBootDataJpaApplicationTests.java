@@ -1,4 +1,4 @@
-package com.niharika.tutorials;
+package com.mams.login;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

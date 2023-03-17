@@ -1,7 +1,7 @@
-package com.niharika.tutorials.service;
+package com.mams.login.service;
 
-import com.niharika.tutorials.model.Product;
-import com.niharika.tutorials.repository.ProductRepository;
+import com.mams.login.model.Product;
+import com.mams.login.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +17,7 @@ public class ProductService {
     ProductRepository productRepository;
     public List<Product> getAllProducts(){
         List<Product> products = new ArrayList<Product>();
-        List<Product> saveProducts = Arrays.asList(new Product("Niharika","Sam",true));
+        List<Product> saveProducts = Arrays.asList(new Product("Sam","Sam",true));
         productRepository.saveAll(saveProducts);
             productRepository.findAll().forEach(products::add);
 

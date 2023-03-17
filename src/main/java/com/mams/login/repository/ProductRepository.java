@@ -1,6 +1,6 @@
-package com.niharika.tutorials.repository;
+package com.mams.login.repository;
 
-import com.niharika.tutorials.model.Product;
+import com.mams.login.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

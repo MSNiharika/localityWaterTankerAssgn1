@@ -1,4 +1,4 @@
-package com.niharika.tutorials;
+package com.mams.login;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

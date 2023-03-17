@@ -1,4 +1,4 @@
-package com.niharika.tutorials.config;
+package com.mams.login.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -13,7 +13,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/resources/**", "/quickbooks/products").fullyAuthenticated()
+                .antMatchers("/resources/**", "/mamslogin/getLogin").fullyAuthenticated()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
